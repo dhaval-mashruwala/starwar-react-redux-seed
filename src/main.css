@@ -1,0 +1,185 @@
+body, html{
+  background: url("./assets/img/bg.jpg") center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  font-family: 'Dosis', arial, verdana, sans-serif;
+  overflow: scroll;
+  position: relative;
+  margin: 0px;
+}
+
+.container{
+  margin: 0px;
+  padding:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .sort-select {
+  width: 80%;
+  height: 70px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .sort-select>.select-title {
+  color: white;
+  font-size: 20px;
+}
+.container .sort-select>.Select {
+  width: 100%;
+}
+
+.container .main-logo {
+  position: absolute;
+  width: 2.6em;
+  left: 50%;
+  top: 20vh;
+  font-size: 10em;
+  text-align: center;
+  margin-left: -1.3em;
+  line-height: 0.8em;
+  letter-spacing: -0.05em;
+  color: #000;
+  text-shadow: -2px -2px 0 #EBD71C, 2px -2px 0 #EBD71C, -2px 2px 0 #EBD71C, 2px 2px 0 #EBD71C;
+  opacity: 0;
+  z-index: 1;
+  -webkit-animation: logo 5s ease-out 2.5s;
+  -moz-animation: logo 5s ease-out 2.5s;
+  -ms-animation: logo 5s ease-out 2.5s;
+  -o-animation: logo 5s ease-out 2.5s;
+  animation: logo 5s ease-out 2.5s;
+}
+
+.container .main .movies-cont {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  -webkit-animation: main 5s ease-out 2.5s;
+  -moz-animation: main 5s ease-out 2.5s;
+  -ms-animation: main 5s ease-out 2.5s;
+  -o-animation: main 5s ease-out 2.5s;
+  animation: main 5s ease-out 2.5s;
+  animation-fill-mode: forwards
+}
+
+.container .main .movies-cont .movie-cont {
+  width: 200px;
+  height: 300px;
+  margin: 5px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.container .main .movies-cont .movie-cont:hover {
+  border: 2px solid white;
+}
+
+.container .main .movies-cont .movie-cont .movie-title{
+  text-align: center;
+  font-size: 28px;
+  text-shadow: -1px -1px yellow;
+}
+.container .movie-detail-cont{
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+.container .movie-detail-cont>img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container .movie-detail-cont>.upper-index{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .movie-detail-cont>.upper-index>.movie-title{
+  margin: 20px;
+  color: white;
+  font-size: 20px;
+}
+.container .movie-detail-cont>.upper-index>.movie-info-cont{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-info-cont>.movie-row{
+  width: 100%;
+  min-height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background-color: #5b5b5b;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.movie-info-cont>.movie-row>.movie-label{
+  width: 30%;
+  text-align: center;
+}
+
+.movie-info-cont>.movie-row>.movie-value{
+  width: 70%;
+  text-align: center;
+}
+
+
+@-webkit-keyframes logo {
+  0% { -webkit-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -webkit-transform: scale(0.1); opacity: 0; }
+}
+
+@-moz-keyframes logo {
+  0% { -moz-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -moz-transform: scale(0.1); opacity: 0; }
+}
+
+@-ms-keyframes logo {
+  0% { -ms-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -ms-transform: scale(0.1); opacity: 0; }
+}
+
+@-o-keyframes logo {
+  0% { -o-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -o-transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes logo {
+  0% { transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { transform: scale(0.1); opacity: 0; }
+}
